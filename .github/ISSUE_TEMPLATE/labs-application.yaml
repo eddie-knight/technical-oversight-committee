@@ -1,0 +1,125 @@
+---
+name: "Labs Project Acceptance Checklist"
+description: "Submit this checklist for a project applying to FINOS Labs or during periodic maintenance reviews."
+title: "[Labs Acceptance] <project-name>"
+labels: ["labs-review", "acceptance-checklist"]
+assignees:
+  - ""
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ Only FINOS members can propose new projects. Learn more at https://www.finos.org/membership-benefits#become-a-member
+
+  - type: checkboxes
+    id: member_firm
+    attributes:
+      label: Membership Confirmation
+      description: Confirm that the proposal originates from a FINOS member firm.
+      options:
+        - label: I confirm this proposal originates from a FINOS member organization
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 1. Describing the Contribution
+
+  - type: textarea
+    id: business_problem
+    attributes:
+      label: Business Problem
+      description: Describe the business problem the contribution solves.
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the contribution type (project or working group) and how it addresses the business problem.
+
+  - type: textarea
+    id: tentative_roadmap
+    attributes:
+      label: Tentative Roadmap
+      description: Outline short- and medium-term goals and phases. What does success look like?
+
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State
+      description: Summarize the history and current state of the project.
+
+  - type: textarea
+    id: existing_materials
+    attributes:
+      label: Existing Materials
+      description: Provide links to source code or documentation. If private, grant `finos-admin` read-only access.
+
+  - type: textarea
+    id: project_meta
+    attributes:
+      label: Project Metadata
+      description: |
+        Please provide the following:
+        - Repository URL (if exists)
+        - Project Name
+        - CI/CD system in use (if any)
+        - Release status (released? public? latest version?)
+        - Existing project documentation location (URL or other)
+        - Trademark status (registered or not)
+        - Logo availability
+        - TOC presentation status (~15 minutes prepared?)
+        - Are meetings currently held?
+        - Are meeting minutes and attendance tracked?
+        - Is this a data model that may use FINOS Legend Studio?
+
+  - type: textarea
+    id: maintainers
+    attributes:
+      label: Maintainers
+      description: Provide full name, affiliation, work email, and GitHub/GitLab username for each maintainer.
+
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Confirmed Contributors
+      description: List any individuals committed to contributing, with name, affiliation, email, and GitHub/GitLab username.
+
+  - type: textarea
+    id: target_contributors
+    attributes:
+      label: Target Contributors
+      description: Describe the profile of the contributors you would like to attract (e.g. role, organization, skills).
+
+  - type: checkboxes
+    id: communication_channels
+    attributes:
+      label: Project Communication Channels
+      description: Select communication methods the project will use.
+      options:
+        - label: GitHub Issues
+        - label: GitHub Discussions
+        - label: GitHub Team Discussions (public)
+        - label: GitHub Team Discussions (private)
+        - label: Mailing-list (groups.io)
+        - label: FINOS Slack - General (public)
+        - label: FINOS Slack - Leadership (private)
+        - label: Recurring meetings
+
+  - type: checkboxes
+    id: onboarding_materials
+    attributes:
+      label: FINOS Onboarding Requirements Acknowledgment
+      description: Confirm you've reviewed key onboarding materials.
+      options:
+        - label: "[FINOS Overview PDF](https://www.finos.org/hubfs/An%20Introduction%20to%20FINOS.pdf)"
+        - label: "[FINOS Maintainers Cheatsheet](https://community.finos.org/docs/finos-maintainers-cheatsheet/)"
+        - label: "[FINOS Governance Docs](https://community.finos.org/docs/governance)"
+        - label: "[FINOS Project Lifecycle](https://community.finos.org/docs/governance/Software-Projects/project-lifecycle)"
+
+  - type: textarea
+    id: socialisation
+    attributes:
+      label: Community Socialisation
+      description: Provide a draft announcement or outreach message to the FINOS community. You can use this to share the proposal on community@finos.org or in Slack.
+---
